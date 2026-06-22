@@ -17,8 +17,16 @@
     s0.parentNode.insertBefore(s1,s0);
     })();
 </script>
-
 <!--End of Tawk.to Script-->
+<script>
+    function openChat() {
+        if (typeof Tawk_API !== 'undefined') {
+
+            Tawk_API.maximize();
+        }
+    }
+</script>
+
 
 <style>
     * {
@@ -269,7 +277,7 @@
             <a href="https://linkedin.com/in/subashtimalsina/" target="_blank" class="btn btn-primary">
                 View LinkedIn Profile
             </a>
-            <a href="#contact" class="btn btn-secondary">
+            <a href="#" class="btn btn-primary" onclick="openChat(); return false;">
                 Get In Touch
             </a>
         </div>
