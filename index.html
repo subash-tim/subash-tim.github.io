@@ -27,20 +27,6 @@
         }
     </script>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6340846947879889" crossorigin="anonymous"></script>
-    <form action="https://www.paypal.com/donate" method="post" target="_top">
-    <input type="hidden" name="hosted_button_id" value="556DJCMTKCE5W" />
-    <input type="image"
-            src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif"
-            border="0"
-            name="submit"
-            title="PayPal - The safer, easier way to pay online!"
-            alt="Donate with PayPal button" />
-    <img alt=""
-        border="0"
-        src="https://www.paypal.com/en_US/i/scr/pixel.gif"
-        width="1"
-        height="1" />
-    </form>
     <style>
         * {
             margin: 0;
@@ -270,6 +256,53 @@
                 padding: 25px;
             }
         }
+        .site-footer {
+            background: #222;
+            color: #ddd;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .donation-section {
+            margin-bottom: 25px;
+        }
+
+        .donation-title {
+            font-size: 22px;
+            font-weight: bold;
+            color: #fff;
+            margin-bottom: 10px;
+        }
+
+        .donation-text {
+            color: #ccc;
+            max-width: 600px;
+            margin: 0 auto 20px;
+            line-height: 1.6;
+        }
+
+        .paypal-btn {
+            border: none;
+            cursor: pointer;
+            transition: transform 0.2s ease;
+        }
+
+        .paypal-btn:hover {
+            transform: scale(1.05);
+        }
+
+        .site-footer hr {
+            border: 0;
+            border-top: 1px solid #444;
+            margin: 30px auto;
+            max-width: 700px;
+        }
+
+        .footer-copy {
+            font-size: 14px;
+            color: #aaa;
+            line-height: 1.8;
+        }
     </style>
 </head>
 
@@ -482,12 +515,44 @@
 </div>
 
 <!-- Footer -->
-<footer>
-    <p>
+<footer class="site-footer">
+
+    <div class="donation-section">
+        <p class="donation-title">❤️ Support This Project</p>
+
+        <p class="donation-text">
+            If this project helped you, consider donating to support future updates and keep it free for everyone.
+        </p>
+
+        <form action="https://www.paypal.com/donate" method="post" target="_top">
+            <input type="hidden" name="hosted_button_id" value="556DJCMTKCE5W" />
+
+            <input
+                type="image"
+                src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif"
+                name="submit"
+                title="Donate securely with PayPal"
+                alt="Donate with PayPal"
+                class="paypal-btn" />
+
+            <img
+                alt=""
+                src="https://www.paypal.com/en_US/i/scr/pixel.gif"
+                width="1"
+                height="1"
+                style="display:none;" />
+        </form>
+    </div>
+
+    <hr>
+
+    <p class="footer-copy">
         © <script>document.write(new Date().getFullYear())</script>
-        Subash Timalsina. All Rights Reserved.
-        | Designed with professionalism and passion for technology.
+        <strong>Subash Timalsina</strong>. All Rights Reserved.
+        <br>
+        Designed with ❤️ and passion for technology.
     </p>
+
 </footer>
 
 </body>
